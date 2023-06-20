@@ -9,7 +9,7 @@
     }
 
     #background {
-      background-image: url(/image1.jpg);
+      background-image: url(image1.jpg);
       background-position: 50%;
       position: absolute;
       top: 0;
@@ -21,10 +21,9 @@
     }
 
     h1,h2{
-     
       font-size: 40px;
       font-weight: bold;
-      font-family:  Copperplate; 
+      font-family: Copperplate; 
       margin-top: 50px;
       color: #e23737;
     }
@@ -35,9 +34,11 @@
       font-weight: bold;
       color: #ece3e3;
     }
-    #cbr{
-      font-size:HAK05 ;
+    
+    #cbr {
+      font-size: HAK05;
     }
+    
     #input {
       margin-top: 20px;
       padding: 10px;
@@ -58,7 +59,7 @@
       cursor: pointer;
     }
   </style>
-  <script src ="script.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <div id="background"></div>
@@ -68,8 +69,16 @@
   <div id="output"></div>
   <input type="text" id="input" placeholder="Enter text">
   <button id="btn" onclick="generateOutput()">Submit</button>
-  <div id=cbr>
-  </div>
+  <div id="cbr"></div>
   
+  <script>
+    var input = document.getElementById("input");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) { // 13 represents the Enter key
+        event.preventDefault(); // Prevents the default form submission behavior
+        generateOutput(); // Call the function to handle the submission
+      }
+    });
+  </script>
 </body>
 </html>
