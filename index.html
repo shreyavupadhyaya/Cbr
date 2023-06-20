@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SUKALPA 2023</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #background {
+      background-image: url(/image1.jpg);
+      background-position: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: scroll;
+    }
+
+    h1,h2{
+     
+      font-size: 40px;
+      font-weight: bold;
+      font-family:  Copperplate; 
+      margin-top: 50px;
+      color: #e23737;
+    }
+
+    #output {
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ece3e3;
+    }
+    #cbr{
+      font-size:HAK05 ;
+    }
+    #input {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 300px;
+      font-size: 16px;
+    }
+
+    #btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <script src ="script.js"></script>
+</head>
+<body>
+  <div id="background"></div>
+  
+  <h1 style="font-size:3vw;">SUKALPA 2023</h1>
+  <h2>ROUND 4 <BR>The END GAME</BR></h2>
+  <div id="output"></div>
+  <input type="text" id="input" placeholder="Enter text">
+  <button id="btn" onclick="generateOutput()">Submit</button>
+  <div id=cbr>
+  </div>
+  
+</body>
+</html>
